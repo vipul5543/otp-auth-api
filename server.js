@@ -14,7 +14,7 @@ console.log('TWILIO_AUTH_TOKEN:', process.env.TWILIO_AUTH_TOKEN);
 const app = express();
 
 const corsOptions = {
-  origin: 'https://otp-auth-app.vercel.app/', // Your frontend URL
+  origin: '*', // Your frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
   allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
 };
